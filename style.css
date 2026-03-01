@@ -1,67 +1,29 @@
  /* Import fonts*/
- @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Outfit:wght@300;400;600&display=swap');
 
-
-/* ========================================
-   BASIC FORMATTING
-   ======================================== */
-
-/* RESET DEFAULT STYLE
- * Universal selector * -> selects ALL elements on page
- * margin: spacing between <div> boxes [Box 1]    ← 20px space →    [Box 2]
-   ↑                          ↑
-   └── Extra space around each box
- * padding: Space inside an element between content and its border 
-┌─────────────────────┐
-│                     │ ← 20px padding
-│    Text content     │
-│                     │
-└─────────────────────┘
-  ↑ Border
-  
- * box-sizing: border-box --> Changes how total width/height is calculated to include padding and border, width/height includes padding and border
- 
-  ┌─────────────────────────────────┐
-  │         MARGIN (outside)        │
-  │  ┌───────────────────────────┐  │
-  │  │         BORDER            │  │
-  │  │  ┌─────────────────────┐  │  │
-  │  │  │      PADDING        │  │  │
-  │  │  │  ┌───────────────┐  │  │  │
-  │  │  │  │   CONTENT     │  │  │  │
-  │  │  │  │   (text)      │  │  │  │
-  │  │  │  └───────────────┘  │  │  │
-  │  │  │                     │  │  │
-  │  │  └─────────────────────┘  │  │
-  │  │                           │  │
-  │  └───────────────────────────┘  │
-  │                                 │
-  └─────────────────────────────────┘
-
-
- */
- 
 /* ========================================
  MAIN VARIABLES
  ========================================== */
 
    
 :root {
-  /* Defining the variables using the tones from your images */
+  /* A clean, bright studio white */
+  --background-color: rgba(255, 255, 255, 1);  
   
-  /* Background colour */
-  --background-color: rgba(253, 230, 227, 1);  
-  /* font colour */
-  --font-color: rgba(174, 131, 126, 1);           
-  /* hover colour */
-  --hover-color: rgba(85, 78, 72, 1);
-  /* header colour */
-  --header-color: rgba(85, 78, 72, 1); 
-  /* banner colour */
-  --banner-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
-  /* banner font colour */
-  --banner-font: rgba(85, 78, 72, 1); 
+  /* A deep graphite/black for that 'feline' sleekness */
+  --font-color: rgba(33, 37, 41, 1);           
+  
+  /* A sophisticated muted gold or 'honey' for buttons/hovers (common in their lighting) */
+  --hover-color: rgba(184, 158, 112, 1);
+
+  /* Deep charcoal for headers */
+  --header-color: rgba(26, 26, 26, 1); 
+  
+  /* Pure white with high opacity for banners */
+  --banner-color: rgba(255, 255, 255, 0.98); 
+  
+  /* Matches the main font color */
+  --banner-font: rgba(33, 37, 41, 1); 
 }
   
  /* ========================================
@@ -72,7 +34,7 @@
 * IMPORTANT: h1 sizing overriden in media queries for different screen widths*/
 
 h1 {                             /* Styles for the main heading */
-  font-family: 'Tenor Sans', sans-serif; /* Uses Tenor Sans, falls back to sans-serif */
+  font-family: 'Josefin Sans', sans-serif; /* Uses Tenor Sans, falls back to sans-serif */
   font-weight: 400;               /* Tenor Sans typically uses a regular weight for this look */
   letter-spacing: 0.2em;          /* Adds wide spacing to match the 'Z A N N A' style */
   color: var(--header-color);   
@@ -83,7 +45,7 @@ body {
   /* Styles for the main body element */
   background-color: var(--background-color);    /* Sets entire page background to Light Brown */
   color: var(--font-color);              /* Sets text to Dark Brown for readability */
-  font-family: 'Montserrat', sans-serif; /* Uses Montserrat font, falls back to any sans-serif */
+  font-family: 'Outfit', sans-serif; /* Uses Montserrat font, falls back to any sans-serif */
   text-align: center;             /* Centers all text in the body */
   padding-bottom: 130px;
   margin-top: 70px; /* Adjust the 50px to whatever height you need */
